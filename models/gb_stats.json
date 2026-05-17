@@ -1,0 +1,35 @@
+{
+  "model_name": "Gradient Boosting",
+  "accuracy": 0.7468,
+  "precision": 0.7027,
+  "recall": 0.4815,
+  "f1_score": 0.5714,
+  "roc_auc": 0.8165,
+  "confusion_matrix": [
+    [
+      89,
+      11
+    ],
+    [
+      28,
+      26
+    ]
+  ],
+  "threshold": 0.9673,
+  "feature_importance": {
+    "Pregnancies": 0.03690578842917269,
+    "Glucose": 0.12418295096163037,
+    "BloodPressure": 0.03937269427061257,
+    "SkinThickness": 0.06410855783549914,
+    "Insulin": 0.07362728892075471,
+    "BMI": 0.07927571428386722,
+    "DiabetesPedigreeFunction": 0.05409371308434686,
+    "Age": 0.06630090966900483,
+    "Glucose_Risk": 0.06944852800686784,
+    "BMI_Category": 0.07088924747894344,
+    "Age_Group": 0.0592351063597201,
+    "Glucose_BMI": 0.14289947584097257,
+    "Insulin_Glucose": 0.0576418396564055,
+    "Pedigree_Age": 0.06201818520220227
+  }
+}
