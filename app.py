@@ -90,6 +90,9 @@ def predict():
                 X_sc = p["poly"].transform(X_sc)
 
             prob = float(p["model"].predict_proba(X_sc)[0][1])
+            # Apply isotonic calibrator if available (improves probability quality)
+            if p.get("calibrator") is not None:
+                prob = float(np.clip(p["calibrator"].predict([prob])[0], 0.0, 1.0))
             thresh = p.get("threshold", 0.5)
             pred = int(prob >= thresh)
 

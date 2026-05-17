@@ -1,41 +1,41 @@
 {
   "model_name": "Logistic Regression",
-  "accuracy": 0.7468,
-  "roc_auc": 0.815,
+  "accuracy": 0.7013,
+  "roc_auc": 0.8116,
   "confusion_matrix": [
     [
-      72,
-      28
+      58,
+      42
     ],
     [
-      11,
-      43
+      4,
+      50
     ]
   ],
   "report": {
     "0": {
-      "precision": 0.8674698795180723,
-      "recall": 0.72,
-      "f1-score": 0.7868852459016393,
+      "precision": 0.9354838709677419,
+      "recall": 0.58,
+      "f1-score": 0.7160493827160493,
       "support": 100.0
     },
     "1": {
-      "precision": 0.6056338028169014,
-      "recall": 0.7962962962962963,
-      "f1-score": 0.688,
+      "precision": 0.5434782608695652,
+      "recall": 0.9259259259259259,
+      "f1-score": 0.684931506849315,
       "support": 54.0
     },
-    "accuracy": 0.7467532467532467,
+    "accuracy": 0.7012987012987013,
     "macro avg": {
-      "precision": 0.7365518411674868,
-      "recall": 0.7581481481481481,
-      "f1-score": 0.7374426229508196,
+      "precision": 0.7394810659186535,
+      "recall": 0.752962962962963,
+      "f1-score": 0.7004904447826822,
       "support": 154.0
     },
     "weighted avg": {
-      "precision": 0.7756572292462331,
-      "recall": 0.7467532467532467,
-      "f1-score": 0.7522111986374281,
+      "precision": 0.7980273583359137,
+      "recall": 0.7012987012987013,
+      "f1-score": 0.7051379197497919,
       "support": 154.0
     }
   },
@@ -159,7 +159,7 @@
     1.0,
     1.0
   ],
-  "threshold": 0.4293,
+  "threshold": 0.2135,
   "features": [
     "Pregnancies",
     "Glucose",
@@ -177,7 +177,8 @@
     "Polynomial Features",
     "Threshold Tuning"
   ],
-  "recall": 0.7963,
-  "precision": 0.6056,
-  "f1_score": 0.688
+  "recall": 0.9259,
+  "precision": 0.5435,
+  "f1_score": 0.6849,
+  "r2_score": 0.2472
 }

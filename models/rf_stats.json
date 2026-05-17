@@ -1,41 +1,41 @@
 {
   "model_name": "Random Forest",
-  "accuracy": 0.7532,
-  "roc_auc": 0.827,
+  "accuracy": 0.7273,
+  "roc_auc": 0.8095,
   "confusion_matrix": [
     [
-      67,
-      33
+      65,
+      35
     ],
     [
-      5,
-      49
+      7,
+      47
     ]
   ],
   "report": {
     "0": {
-      "precision": 0.9305555555555556,
-      "recall": 0.67,
-      "f1-score": 0.7790697674418605,
+      "precision": 0.9027777777777778,
+      "recall": 0.65,
+      "f1-score": 0.7558139534883721,
       "support": 100.0
     },
     "1": {
-      "precision": 0.5975609756097561,
-      "recall": 0.9074074074074074,
-      "f1-score": 0.7205882352941176,
+      "precision": 0.573170731707317,
+      "recall": 0.8703703703703703,
+      "f1-score": 0.6911764705882353,
       "support": 54.0
     },
-    "accuracy": 0.7532467532467533,
+    "accuracy": 0.7272727272727273,
     "macro avg": {
-      "precision": 0.7640582655826558,
-      "recall": 0.7887037037037037,
-      "f1-score": 0.7498290013679891,
+      "precision": 0.7379742547425474,
+      "recall": 0.7601851851851852,
+      "f1-score": 0.7234952120383037,
       "support": 154.0
     },
     "weighted avg": {
-      "precision": 0.8137912223278077,
-      "recall": 0.7532467532467533,
-      "f1-score": 0.7585632561692754,
+      "precision": 0.7872012811037202,
+      "recall": 0.7272727272727273,
+      "f1-score": 0.7331488620818306,
       "support": 154.0
     }
   },
@@ -168,7 +168,7 @@
     1.0,
     1.0
   ],
-  "threshold": 0.2931,
+  "threshold": 0.3486,
   "features": [
     "Pregnancies",
     "Glucose",
@@ -187,7 +187,8 @@
     "Gradient Boosting Ensemble",
     "Threshold Tuning"
   ],
-  "recall": 0.9074,
-  "precision": 0.5976,
-  "f1_score": 0.7206
+  "recall": 0.8704,
+  "precision": 0.5732,
+  "f1_score": 0.6912,
+  "r2_score": 0.2672
 }

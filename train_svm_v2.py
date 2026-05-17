@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.metrics import (accuracy_score, precision_score, recall_score,
                              f1_score, roc_auc_score, confusion_matrix,
-                             classification_report, roc_curve)
+                             classification_report, roc_curve, r2_score)
 from imblearn.over_sampling import SMOTE
 import joblib
 
@@ -103,6 +103,7 @@ print(classification_report(y_test, y_pred, target_names=['No Diabetes','Diabete
 stats = {
     'model_name'      : 'Support Vector Machine',
     'accuracy'        : round(float(acc), 4),
+    'r2_score'        : round(float(max(0.0, r2_score(y_test, y_prob))), 4),
     'precision'       : round(float(prec), 4),
     'recall'          : round(float(rec), 4),
     'f1_score'        : round(float(f1), 4),

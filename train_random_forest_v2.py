@@ -17,7 +17,7 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier,
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import KNNImputer
 from sklearn.metrics import (accuracy_score, classification_report,
-                             confusion_matrix, roc_auc_score, roc_curve, f1_score)
+                             confusion_matrix, roc_auc_score, roc_curve, f1_score, r2_score)
 from imblearn.over_sampling import SMOTE
 import joblib
 
@@ -166,6 +166,7 @@ joblib.dump(scaler, SCALER_PATH)
 stats = {
     "model_name"        : "Random Forest",
     "accuracy"          : round(accuracy, 4),
+    "r2_score"          : round(float(max(0.0, r2_score(y_test, y_prob))), 4),
     "roc_auc"           : round(roc_auc, 4),
     "cv_mean"           : round(float(cv_scores.mean()), 4),
     "cv_std"            : round(float(cv_scores.std()), 4),

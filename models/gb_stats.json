@@ -1,21 +1,21 @@
 {
   "model_name": "Gradient Boosting",
-  "accuracy": 0.7468,
-  "precision": 0.7027,
-  "recall": 0.4815,
-  "f1_score": 0.5714,
-  "roc_auc": 0.8165,
+  "accuracy": 0.7143,
+  "precision": 0.5581,
+  "recall": 0.8889,
+  "f1_score": 0.6857,
+  "roc_auc": 0.8103,
   "confusion_matrix": [
     [
-      89,
-      11
+      62,
+      38
     ],
     [
-      28,
-      26
+      6,
+      48
     ]
   ],
-  "threshold": 0.9673,
+  "threshold": 0.32,
   "feature_importance": {
     "Pregnancies": 0.03690578842917269,
     "Glucose": 0.12418295096163037,
@@ -31,5 +31,33 @@
     "Glucose_BMI": 0.14289947584097257,
     "Insulin_Glucose": 0.0576418396564055,
     "Pedigree_Age": 0.06201818520220227
+  },
+  "r2_score": 0.2546,
+  "report": {
+    "0": {
+      "precision": 0.9117647058823529,
+      "recall": 0.62,
+      "f1-score": 0.7380952380952381,
+      "support": 100.0
+    },
+    "1": {
+      "precision": 0.5581395348837209,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.6857142857142857,
+      "support": 54.0
+    },
+    "accuracy": 0.7142857142857143,
+    "macro avg": {
+      "precision": 0.7349521203830369,
+      "recall": 0.7544444444444445,
+      "f1-score": 0.7119047619047619,
+      "support": 154.0
+    },
+    "weighted avg": {
+      "precision": 0.787766269298417,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.7197278911564625,
+      "support": 154.0
+    }
   }
 }
